@@ -1,0 +1,164 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Manrope", sans-serif;
+  background: linear-gradient(
+    to top left,
+    hsl(222, 81%, 94%),
+    hsl(219, 64%, 96%)
+  );
+
+  display: grid;
+  place-items: center;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: min(90%, 400px);
+  background: linear-gradient(
+    to bottom right,
+    hsl(210, 17%, 98%),
+    hsl(233, 100%, 94%)
+  );
+  border-radius: 1rem;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  margin-inline: auto;
+  padding: 1.5rem;
+}
+
+.card {
+  width: 100%;
+}
+
+.card__title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: hsl(210, 11%, 15%);
+}
+
+.card__description {
+  font-size: 1.1rem;
+  color: hsl(210, 10%, 23%);
+  margin-top: 0.3rem;
+}
+
+form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.email,
+.password {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding-block: 0.7rem;
+  border-radius: 0.7rem;
+}
+
+.email__input,
+.password__input {
+  background: hsl(210, 17%, 98%);
+  padding-left: 2.7rem;
+  padding-right: 0.5rem;
+  border: 0.11rem solid hsl(190, 72%, 65%);
+}
+
+.email__input:focus,
+.password__input:focus {
+  outline: 1px solid #fff;
+  background: #fff;
+  border: 0.11rem solid hsl(207, 73%, 60%);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(34, 38, 42, 0.8);
+  font-size: 1.1rem;
+}
+
+.email__icon,
+.password__icon {
+  color: hsl(210, 11%, 15%);
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  transform: translateY(-50%);
+}
+
+.submit-button {
+  border: none;
+  background: hsl(229, 83%, 60%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0px 10px 20px rgba(68, 99, 238, 0.5);
+  transition: background 200ms ease-in;
+}
+
+.submit-button:hover {
+  background: hsl(229, 83%, 50%);
+  cursor: pointer;
+}
+
+.card-footer {
+  font-size: 0.9rem;
+  color: hsl(208, 7%, 46%);
+  margin-top: 1.5rem;
+}
+
+.terms {
+  color: hsl(208, 7%, 46%);
+  text-decoration: none;
+}
+
+.terms:hover {
+  color: hsl(229, 83%, 60%);
+}

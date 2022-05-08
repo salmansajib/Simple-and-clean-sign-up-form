@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=PT+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Simple and clean sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2 class="card__title">Sign in</h2>
+        <p class="card__description">
+          Access thounds of Movies, TV shows and Livestreams
+        </p>
+        <form action="#">
+          <div class="email">
+            <input
+              class="email__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="off"
+              required
+            />
+            <ion-icon class="email__icon" name="mail"></ion-icon>
+          </div>
+          <div class="password">
+            <input
+              class="password__input"
+              type="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+            <ion-icon class="password__icon" name="lock-closed"></ion-icon>
+          </div>
+          <input class="submit-button" type="submit" value="Sign up" />
+        </form>
+        <p class="card-footer">
+          By signing up, you agree the
+          <a href="#" class="terms">terms &#38; conditions.</a>
+        </p>
+      </div>
+    </div>
+
+    <!--    ion-icon    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
