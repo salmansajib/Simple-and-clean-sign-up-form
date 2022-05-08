@@ -105,7 +105,7 @@ input {
 
 .email__input,
 .password__input {
-  background: hsl(210, 17%, 98%);
+  background: transparent;
   padding-left: 2.7rem;
   padding-right: 0.5rem;
   border: 0.11rem solid hsl(190, 72%, 65%);
@@ -113,8 +113,8 @@ input {
 
 .email__input:focus,
 .password__input:focus {
-  outline: 1px solid #fff;
-  background: #fff;
+  outline: 1px solid hsl(210, 17%, 98%);
+  background: hsl(210, 17%, 98%);
   border: 0.11rem solid hsl(207, 73%, 60%);
 }
 
