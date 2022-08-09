@@ -106,16 +106,16 @@ input {
 .email__input,
 .password__input {
   background: transparent;
-  padding-left: 2.7rem;
+  padding-left: 3rem;
   padding-right: 0.5rem;
-  border: 0.11rem solid hsl(190, 72%, 65%);
+  border: 0.11rem solid rgba(34, 38, 42, 0.2);
 }
 
 .email__input:focus,
 .password__input:focus {
-  outline: 1px solid hsl(210, 17%, 98%);
+  outline: 1px solid hsl(229, 83%, 60%);
   background: hsl(210, 17%, 98%);
-  border: 0.11rem solid hsl(207, 73%, 60%);
+  border: 0.11rem solid rgba(34, 38, 42, 0.2);
 }
 
 ::-webkit-input-placeholder {
@@ -123,10 +123,10 @@ input {
   font-size: 1.1rem;
 }
 
-.email__icon,
-.password__icon {
+.fa-envelope,
+.fa-lock {
   color: hsl(210, 11%, 15%);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   position: absolute;
   top: 50%;
   left: 0.8rem;
